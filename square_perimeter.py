@@ -2,8 +2,8 @@
 
 # Created by Samuel Webster
 # Created on March 2022
-# This program calculates the circumference of a circle
-#     with inputted radius
+# This program calculates the perimeter of a square
+#     with inputted side length
 
 
 def perimeter_calculator(side_length):
@@ -22,14 +22,14 @@ def main():
 
         # input can neither be negative, nor a string
         try:
-            int_side_length = float(str_side_length)
-            if int_side_length <= 0:
+            flt_side_length = float(str_side_length)
+            if flt_side_length <= 0:
                 continue
         except Exception:
             continue
 
         # process
-        perimeter = perimeter_calculator(int_side_length)
+        perimeter = perimeter_calculator(flt_side_length)
         break
 
     # output
