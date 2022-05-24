@@ -24,8 +24,10 @@ def main():
         try:
             flt_side_length = float(str_side_length)
             if flt_side_length <= 0:
+                print("Enter valid side length")
                 continue
         except Exception:
+            print("Enter valid side length")
             continue
 
         # process
